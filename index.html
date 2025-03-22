@@ -2,21 +2,14 @@
 <html>
 <head>
 <title>Google Search Bar</title>
-<h1>
-<center>
-<span style=color:blue;font-weight:bold>G</span>
-<span style=color:red;font-weight:bold>o</span>
-<span style=color:orange; font-weight:bold>o</span>
-<span style=color:blue;font-weight:bold>g</span>
-<span style=color:green;font-weight:bold>l</span>
-<span style=color:red;font-weight:bold>e</span>
-</center>
-</h1>
-<style>.search-container {
-  width: 600px; /* Adjust as needed */
+<style>
+.search-container {
+  width: 400px; /* Adjust as needed */
   margin: 50px auto; /* Center the container */
   position: relative; /* For positioning the icon */
-}.search-bar {
+}
+
+.search-bar {
   width: 100%;
   padding: 10px;
   padding-left: 40px; /* Space for the icon */
@@ -25,12 +18,20 @@
   font-size: 16px;
   box-sizing: border-box; /* Include padding in width */
   transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
-}.search-bar:focus {
+}
+
+.search-bar:focus {
   outline: none; /* Remove default focus outline */
-}.search-bar:hover {
+  border-color: #4285f4; /* Google blue */
+  box-shadow: 0 0 5px rgba(66, 133, 244, 0.3); /* Subtle blue shadow */
+}
+
+.search-bar:hover {
     border-color: #808080; /* Slightly darker gray on hover */
     box-shadow: 0 0 8px rgba(0,0,0,0.15); /* Softer, wider shadow on hover */
 }
+
+
 .search-icon {
   position: absolute;
   top: 50%;
@@ -40,21 +41,33 @@
   color: #999; /* Light gray */
 }
 
-/* Optional: Use a font icon library like Font Awesome */.fa {
+/* Optional: Use a font icon library like Font Awesome */
+.fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}.fa-search:before {
+}
+
+.fa-search:before {
   content: "\f002"; /* Font Awesome search icon */
 }
 
 </style>
 </head>
 <body>
-
+<h1>
+<center>
+<span style="color:blue;font-weight:bold">G</span>
+<span style="color:red;font-weight:bold">o</span>
+<span style="color:orange;font-weight:bold">o</span>
+<span style="color:blue;font-weight:bold">g</span>
+<span style="color:green;font-weight:bold">l</span>
+<span style="color:red;font-weight:bold">e</span>
+</center>
+</h1>
 <div class="search-container">
   <input type="text" class="search-bar" placeholder="Search Google">
   <span class="search-icon">
